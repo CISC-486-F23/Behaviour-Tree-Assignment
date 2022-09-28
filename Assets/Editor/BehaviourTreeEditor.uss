@@ -1,0 +1,11 @@
+GridBackground{
+    --grid-background-color: rgb(50, 50, 50);
+    --line-color: rgba(100, 100, 100, 0.1);
+    --thick-line-color: rgba(100, 100, 100, 0.2);
+    --spacing: 15;
+}
+
+ListView{
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+}

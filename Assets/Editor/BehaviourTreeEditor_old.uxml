@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/BehaviourTreeEditor.uss?fileID=7433441132597879392&amp;guid=bc22f215527ac43c8b3c2b93605e647a&amp;type=3#BehaviourTreeEditor" />
+    <ui:GroupBox style="flex-grow: 1; flex-shrink: 1; flex-direction: row; min-height: 100%; height: 100%;">
+        <ui:GroupBox name="CompositesMenu" style="flex-grow: 1; max-width: 20%; min-width: 200px; flex-shrink: 1;">
+            <ui:ListView focusable="true" name="CompositesList" style="flex-grow: 1; max-width: none; min-width: auto; background-color: rgb(50, 50, 50);" />
+            <ui:Button text="New Composite" display-tooltip-when-elided="true" name="CompositesButton" style="flex-grow: 0;" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Graph" style="flex-shrink: 1; flex-grow: 1; height: auto;">
+            <ui:TextField picking-mode="Ignore" label="Behaviour" value="Root" text="Root" />
+            <BehaviourTreeGraph focusable="true" name="BehaviourTreeGraph" style="flex-grow: 1; height: auto; min-height: auto;" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Behaviours" style="flex-grow: 1; flex-shrink: 1; align-items: flex-end; max-width: 20%; min-width: 200px;">
+            <ui:Label text="Controls" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center; flex-shrink: 1; flex-grow: 0; width: 100%;" />
+            <ui:ListView focusable="true" name="Controls" />
+            <ui:Label text="Decorators" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center; flex-shrink: 1; flex-grow: 0; width: 100%;" />
+            <ui:ListView focusable="true" name="Decorators" />
+            <ui:Label text="Conditionals" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center; flex-shrink: 1; flex-grow: 0; width: 100%;" />
+            <ui:ListView focusable="true" name="Conditionals" />
+            <ui:Label text="Actions" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center; flex-shrink: 1; flex-grow: 0; width: 100%;" />
+            <ui:ListView focusable="true" name="Actions" />
+            <ui:Label text="Composites" display-tooltip-when-elided="true" style="-unity-font-style: bold; -unity-text-align: upper-center; flex-shrink: 1; flex-grow: 0; width: 100%;" />
+            <ui:ListView focusable="true" name="Composites" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>
